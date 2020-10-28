@@ -142,10 +142,10 @@
 	"layouts": {
 		"items": [
 			"Layout 1",
-			"EndStage1",
-			"Body",
 			"Layout 2",
-			"Layout 3"
+			"Layout 3",
+			"EndStage1",
+			"Body"
 		],
 		"subfolders": []
 	},
