@@ -1,0 +1,20 @@
+{
+	"name": "BrickBG",
+	"plugin-id": "TiledBg",
+	"sid": 503063909582458,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 24,
+		"height": 25,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Tile\\Brick.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8375349,
+		"useCollisionPoly": true
+	}
+}

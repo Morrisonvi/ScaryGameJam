@@ -1,0 +1,153 @@
+{
+	"name": "Fire",
+	"plugin-id": "Sprite",
+	"sid": 412158657621880,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 208,
+						"height": 254,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\FX\\Fire2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4320766,
+						"collisionPoly": {
+							"points": [
+								0.3605769230769231,
+								0.2952755905511811,
+								0.5,
+								0.14566929133858267,
+								0.7307692307692307,
+								0.21653543307086615,
+								0.7163461538461539,
+								0.5,
+								0.6923076923076923,
+								0.7480314960629921,
+								0.5,
+								0.7913385826771654,
+								0.33653846153846156,
+								0.7204724409448819,
+								0.27403846153846156,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 208,
+						"height": 254,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\FX\\Fire1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2701015,
+						"collisionPoly": {
+							"points": [
+								0.38461538461538464,
+								0.31496062992125984,
+								0.5,
+								0.16929133858267717,
+								0.6730769230769231,
+								0.2637795275590551,
+								0.7355769230769231,
+								0.5,
+								0.6730769230769231,
+								0.7322834645669292,
+								0.5,
+								0.8228346456692913,
+								0.32211538461538464,
+								0.7322834645669292,
+								0.2980769230769231,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 208,
+						"height": 254,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\FX\\Fire3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8294241,
+						"collisionPoly": {
+							"points": [
+								0.36538461538461536,
+								0.2992125984251969,
+								0.5,
+								0.12992125984251968,
+								0.6971153846153846,
+								0.2440944881889764,
+								0.7644230769230769,
+								0.5,
+								0.7019230769230769,
+								0.7559055118110236,
+								0.5,
+								0.7952755905511811,
+								0.3076923076923077,
+								0.7440944881889764,
+								0.28846153846153844,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 208,
+						"height": 254,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\FX\\Fire1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1032027,
+						"collisionPoly": {
+							"points": [
+								0.38461538461538464,
+								0.31496062992125984,
+								0.5,
+								0.16929133858267717,
+								0.6730769230769231,
+								0.2637795275590551,
+								0.7355769230769231,
+								0.5,
+								0.6730769230769231,
+								0.7322834645669292,
+								0.5,
+								0.8228346456692913,
+								0.32211538461538464,
+								0.7322834645669292,
+								0.2980769230769231,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 180543294153510,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 20
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -103,7 +103,8 @@
 			"Audio",
 			"Keyboard",
 			"Player2",
-			"Crash"
+			"Crash",
+			"BrickBG"
 		],
 		"subfolders": [
 			{
@@ -120,6 +121,13 @@
 				],
 				"subfolders": [],
 				"name": "Scare"
+			},
+			{
+				"items": [
+					"Fire"
+				],
+				"subfolders": [],
+				"name": "FX"
 			}
 		]
 	},
