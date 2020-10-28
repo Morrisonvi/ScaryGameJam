@@ -674,18 +674,18 @@
 					"behaviorType": "Fade"
 				},
 				{
-					"id": "stop-animation",
-					"objectClass": "Player2",
-					"sid": 108764857227992
-				},
-				{
 					"id": "set-enabled",
 					"objectClass": "Player2",
-					"sid": 681257195754160,
+					"sid": 416143469687418,
 					"behaviorType": "Platform",
 					"parameters": {
 						"state": "disabled"
 					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Player2",
+					"sid": 108764857227992
 				},
 				{
 					"id": "wait",

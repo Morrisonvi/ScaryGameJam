@@ -64,7 +64,17 @@
 				}
 			],
 			"sid": 646995408296056,
-			"effectTypes": [],
+			"effectTypes": [
+				{
+					"effectId": "pixellate",
+					"name": "Pixellate",
+					"instance": {
+						"parameters": {
+							"size": 4
+						}
+					}
+				}
+			],
 			"isInitiallyVisible": true,
 			"color": [
 				1,
@@ -122,7 +132,17 @@
 				}
 			],
 			"sid": 522788602105159,
-			"effectTypes": [],
+			"effectTypes": [
+				{
+					"effectId": "radialpixellate",
+					"name": "RadialPixellate",
+					"instance": {
+						"parameters": {
+							"size": 13
+						}
+					}
+				}
+			],
 			"isInitiallyVisible": true,
 			"color": [
 				1,

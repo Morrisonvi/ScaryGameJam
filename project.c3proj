@@ -77,6 +77,22 @@
 			"author": "Scirra",
 			"version": "r218",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "pixellate",
+			"name": "Pixellate",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "radialpixellate",
+			"name": "Radial pixellate",
+			"author": "Brad Larson",
+			"version": "r218",
+			"bundled": false
 		}
 	],
 	"uniqueId": "x0e0n4jjinn",
