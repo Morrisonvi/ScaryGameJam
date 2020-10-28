@@ -104,7 +104,9 @@
 			"Keyboard",
 			"Player2",
 			"Crash",
-			"BrickBG"
+			"BrickBG",
+			"clearPlatform",
+			"darkBG"
 		],
 		"subfolders": [
 			{
@@ -141,7 +143,9 @@
 		"items": [
 			"Layout 1",
 			"EndStage1",
-			"Body"
+			"Body",
+			"Layout 2",
+			"Layout 3"
 		],
 		"subfolders": []
 	},
