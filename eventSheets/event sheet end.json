@@ -1,0 +1,624 @@
+{
+	"name": "Event sheet End",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "DashL2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 621084562532772
+		},
+		{
+			"eventType": "variable",
+			"name": "DashR2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 517318168853436
+		},
+		{
+			"eventType": "comment",
+			"text": "\"Game\" Mechanics"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Player2",
+					"sid": 878215290964458,
+					"behaviorType": "Platform",
+					"isInverted": true
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "Player2",
+					"sid": 845190708271883,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player2",
+					"sid": 251959141028715,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 645901242856887
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Player2",
+					"sid": 743162589067759,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "Player2",
+					"sid": 953436961696082,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player2",
+					"sid": 135565942613898,
+					"parameters": {
+						"animation": "\"Run\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 852274378364626
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "Player2",
+					"sid": 808510953744675,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-falling",
+					"objectClass": "Player2",
+					"sid": 928095099645034,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player2",
+					"sid": 794771930000567,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 959619098454273,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 600227323098642,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player2",
+					"sid": 745663483767311,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 134430023238051
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 116964628028593,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Player2",
+					"sid": 749921277204558,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 381676005524740
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 630858409603063,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Player2",
+					"sid": 580455102265720
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player2",
+					"sid": 916659745569829,
+					"parameters": {
+						"animation": "\"Dash\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player2",
+					"sid": 286595810044884,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 115012746997393,
+					"parameters": {
+						"variable": "DashL",
+						"value": "true"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 715323182821866,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 263670891280699,
+					"parameters": {
+						"variable": "DashL",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player2",
+					"sid": 584059931518183,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player2",
+					"sid": 439633288825247,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 631592228360846
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 379061858059717,
+					"parameters": {
+						"key": 32
+					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Player2",
+					"sid": 487257427180407,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player2",
+					"sid": 541749537169464,
+					"parameters": {
+						"animation": "\"Dash\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player2",
+					"sid": 344371066651500,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 385202362620702,
+					"parameters": {
+						"variable": "DashR",
+						"value": "true"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 126434558888060,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 818421199474739,
+					"parameters": {
+						"variable": "DashR",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player2",
+					"sid": 140934784759458,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Player2",
+					"sid": 906011572483490,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 640308777242300
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 528522458012334,
+					"parameters": {
+						"variable": "DashL"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 732842054599228,
+					"parameters": {
+						"interval-seconds": "0.05"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "Player2",
+					"sid": 483327082108865,
+					"parameters": {
+						"angle": "0",
+						"distance": "-50"
+					}
+				}
+			],
+			"sid": 617677866250080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 260780548912845,
+					"parameters": {
+						"variable": "DashR"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 315697678202411,
+					"parameters": {
+						"interval-seconds": "0.05"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "Player2",
+					"sid": 483378377167327,
+					"parameters": {
+						"angle": "0",
+						"distance": "50"
+					}
+				}
+			],
+			"sid": 860420193378146
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "Player2",
+					"sid": 523298146211745,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 491538812406711,
+					"parameters": {
+						"variable": "DashL"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player2",
+					"sid": 649293278499981,
+					"parameters": {
+						"animation": "\"Dash\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "Player2",
+					"sid": 385040931801943,
+					"parameters": {
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 859708268516490
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-jumping",
+					"objectClass": "Player2",
+					"sid": 671163526808300,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 580136393709561,
+					"parameters": {
+						"variable": "DashR"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player2",
+					"sid": 836114450089146,
+					"parameters": {
+						"animation": "\"Dash\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "Player2",
+					"sid": 119470271856928,
+					"parameters": {
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 345474484778421
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-falling",
+					"objectClass": "Player2",
+					"sid": 136243135424921,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 435494145977703,
+					"parameters": {
+						"variable": "DashL"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player2",
+					"sid": 525623415893212,
+					"parameters": {
+						"animation": "\"Dash\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "Player2",
+					"sid": 295697718379965,
+					"parameters": {
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 417525500106579
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-falling",
+					"objectClass": "Player2",
+					"sid": 971824544333237,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 104966739099002,
+					"parameters": {
+						"variable": "DashR"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player2",
+					"sid": 403699414391533,
+					"parameters": {
+						"animation": "\"Dash\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "Player2",
+					"sid": 480081305423002,
+					"parameters": {
+						"from": "current-frame"
+					}
+				}
+			],
+			"sid": 179435864327306
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-by-wall",
+					"objectClass": "Player2",
+					"sid": 318503346570316,
+					"behaviorType": "Platform",
+					"parameters": {
+						"side": "left"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 532923548038858,
+					"parameters": {
+						"variable": "DashL"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "Player2",
+					"sid": 923572216083076,
+					"parameters": {
+						"angle": "0",
+						"distance": "70"
+					}
+				}
+			],
+			"sid": 949403641477889
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-by-wall",
+					"objectClass": "Player2",
+					"sid": 126231092404947,
+					"behaviorType": "Platform",
+					"parameters": {
+						"side": "right"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 324719088274446,
+					"parameters": {
+						"variable": "DashR"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "Player2",
+					"sid": 309728208458870,
+					"parameters": {
+						"angle": "0",
+						"distance": "-70"
+					}
+				}
+			],
+			"sid": 100958328883042
+		}
+	],
+	"sid": 868942980482992
+}

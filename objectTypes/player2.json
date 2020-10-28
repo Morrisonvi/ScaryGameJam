@@ -1,0 +1,266 @@
+{
+	"name": "Player2",
+	"plugin-id": "Sprite",
+	"sid": 941811438589787,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 104877401302297
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 338789495970889
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 271241251589930
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 153,
+						"height": 141,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Player\\Grey\\0.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3088913,
+						"collisionPoly": {
+							"points": [
+								0.2875816993464052,
+								0.14893617021276595,
+								0.6993464052287581,
+								0.14893617021276595,
+								0.6993464052287581,
+								0.9686524822695036,
+								0.2875816993464052,
+								0.9686524822695036
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 835584225179594,
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 153,
+						"height": 141,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Player\\Grey\\2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1478889,
+						"collisionPoly": {
+							"points": [
+								0.2222222222222222,
+								0.14893617021276595,
+								0.7320261437908496,
+								0.14893617021276595,
+								0.7320261437908496,
+								0.9645390070921985,
+								0.2222222222222222,
+								0.9645390070921985
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 153,
+						"height": 141,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Player\\Grey\\4.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9525250,
+						"collisionPoly": {
+							"points": [
+								0.2222222222222222,
+								0.14893617021276595,
+								0.7320261437908496,
+								0.14893617021276595,
+								0.7320261437908496,
+								0.9645390070921985,
+								0.2222222222222222,
+								0.9645390070921985
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 153,
+						"height": 141,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Player\\Grey\\3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9313024,
+						"collisionPoly": {
+							"points": [
+								0.2222222222222222,
+								0.14893617021276595,
+								0.7320261437908496,
+								0.14893617021276595,
+								0.7320261437908496,
+								0.9645390070921985,
+								0.2222222222222222,
+								0.9645390070921985
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 153,
+						"height": 141,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Player\\Grey\\4.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 471491,
+						"collisionPoly": {
+							"points": [
+								0.2222222222222222,
+								0.14893617021276595,
+								0.7320261437908496,
+								0.14893617021276595,
+								0.7320261437908496,
+								0.9645390070921985,
+								0.2222222222222222,
+								0.9645390070921985
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 143133095989319,
+				"name": "Run",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			},
+			{
+				"frames": [
+					{
+						"width": 153,
+						"height": 141,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Player\\Grey\\1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3135999,
+						"collisionPoly": {
+							"points": [
+								0.2965686274509804,
+								0.09219858156028368,
+								0.7197712418300654,
+								0.09219858156028368,
+								0.7320261437908496,
+								0.9530496453900709,
+								0.3006535947712418,
+								0.9530496453900709
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 579131745667036,
+				"name": "Jump",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 153,
+						"height": 141,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Player\\Grey\\5.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1834286,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.40425531914893614,
+								1,
+								0.40425531914893614,
+								1,
+								0.5673758865248226,
+								0,
+								0.5673758865248226
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 153,
+						"height": 141,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Player\\Grey\\5.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8827865,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.4326241134751774,
+								1,
+								0.4326241134751774,
+								1,
+								0.5957446808510638,
+								0,
+								0.5957446808510638
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 422251997884925,
+				"name": "Dash",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 20
+			}
+		],
+		"subfolders": []
+	}
+}
