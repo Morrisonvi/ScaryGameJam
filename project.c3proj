@@ -8,16 +8,16 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"id": "Sprite",
+			"name": "Sprite",
 			"author": "Scirra",
 			"version": "r218",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "TiledBg",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"version": "r218",
 			"bundled": false
@@ -34,6 +34,14 @@
 			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r218",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
 			"author": "Scirra",
 			"version": "r218",
 			"bundled": false
@@ -78,9 +86,18 @@
 			"Player",
 			"Audio",
 			"Keyboard",
-			"Player2"
+			"Player2",
+			"Crash"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"FakeCrash"
+				],
+				"subfolders": [],
+				"name": "Glitch FX"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],

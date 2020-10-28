@@ -618,6 +618,96 @@
 				}
 			],
 			"sid": 100958328883042
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 521718207468421
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "FakeCrash",
+					"sid": 694326081746217,
+					"parameters": {
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 805600527158941
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player2",
+					"sid": 849976321929674,
+					"parameters": {
+						"object": "Crash"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "FakeCrash",
+					"sid": 923299633190836,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "FakeCrash",
+					"sid": 363418274487940,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "FakeCrash",
+					"sid": 535711137893006,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Player2",
+					"sid": 133698910420975,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 908526787867530,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 533507890067504,
+					"parameters": {
+						"time-scale": "0"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player2",
+					"sid": 698001254608503,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 647772132659477
 		}
 	],
 	"sid": 868942980482992

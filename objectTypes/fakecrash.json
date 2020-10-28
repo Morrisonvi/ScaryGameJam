@@ -1,0 +1,63 @@
+{
+	"name": "FakeCrash",
+	"plugin-id": "Sprite",
+	"sid": 552008565650489,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 760113106045310
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1600,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Glitch FX\\Fake Crash.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2718133,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.999375,
+								0,
+								0.999375,
+								0.5,
+								0.999375,
+								0.9988888888888889,
+								0.5,
+								0.9988888888888889,
+								0,
+								0.9988888888888889,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 226597371854633,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
