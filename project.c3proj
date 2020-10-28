@@ -96,6 +96,14 @@
 				],
 				"subfolders": [],
 				"name": "Glitch FX"
+			},
+			{
+				"items": [
+					"Body",
+					"Eye"
+				],
+				"subfolders": [],
+				"name": "Scare"
 			}
 		]
 	},
@@ -108,14 +116,16 @@
 	"layouts": {
 		"items": [
 			"Layout 1",
-			"EndStage1"
+			"EndStage1",
+			"Body"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"Event sheet 1",
-			"Event sheet End"
+			"Event sheet End",
+			"Event sheet Body"
 		],
 		"subfolders": []
 	},
@@ -125,7 +135,18 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "132106__sironboy__woman-scream.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 226569266356764
+				},
+				{
+					"name": "Laugh.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 505619435815606
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

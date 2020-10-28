@@ -1,0 +1,152 @@
+{
+	"name": "Event sheet Body",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Look",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 159519226924585
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 659290365017256,
+					"parameters": {
+						"interval-seconds": "5.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 425816511559658,
+					"parameters": {
+						"variable": "Look",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 637579880978583
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 910855155201572,
+					"parameters": {
+						"interval-seconds": "10.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 685218736995719,
+					"parameters": {
+						"variable": "Look",
+						"value": "false"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 293788276040957,
+					"parameters": {
+						"audio-file": "132106__sironboy__woman-scream",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 164406974608800
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 478177439091690,
+					"parameters": {
+						"variable": "Look"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Eye",
+					"sid": 733394818085507,
+					"parameters": {
+						"animation": "\"Look\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 243242870149931
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 516123473356208,
+					"parameters": {
+						"variable": "Look"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Eye",
+					"sid": 330606857600323,
+					"parameters": {
+						"animation": "\"Stare\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 312796249028463
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 184854157069408
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 157926304123316,
+					"parameters": {
+						"audio-file": "Laugh",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 174431682311647
+		}
+	],
+	"sid": 912940409095051
+}

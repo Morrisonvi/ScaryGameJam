@@ -674,36 +674,41 @@
 					"behaviorType": "Fade"
 				},
 				{
-					"id": "set-animation-frame",
+					"id": "stop-animation",
 					"objectClass": "Player2",
-					"sid": 133698910420975,
+					"sid": 108764857227992
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player2",
+					"sid": 681257195754160,
+					"behaviorType": "Platform",
 					"parameters": {
-						"frame-number": "0"
+						"state": "disabled"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 908526787867530,
+					"sid": 479647084873940,
 					"parameters": {
-						"seconds": "0.5"
+						"seconds": "7.0"
 					}
 				},
 				{
 					"id": "set-time-scale",
 					"objectClass": "System",
-					"sid": 533507890067504,
+					"sid": 537080602000330,
 					"parameters": {
-						"time-scale": "0"
+						"time-scale": "1.0"
 					}
 				},
 				{
-					"id": "set-enabled",
-					"objectClass": "Player2",
-					"sid": 698001254608503,
-					"behaviorType": "Platform",
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 519708348526435,
 					"parameters": {
-						"state": "disabled"
+						"layout": "Body"
 					}
 				}
 			],

@@ -1,0 +1,108 @@
+{
+	"name": "Eye",
+	"plugin-id": "Sprite",
+	"sid": 102077893431135,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1600,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Glitch FX\\Eye1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 728767,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1600,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Glitch FX\\Eye2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3602505,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1600,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Glitch FX\\Eye3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4403740,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 248444684477058,
+				"name": "Stare",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 30
+			},
+			{
+				"frames": [
+					{
+						"width": 1600,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Glitch FX\\Eye4.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3885412,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1600,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Glitch FX\\Eye5.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9361654,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 1600,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\Homework\\Group Game\\Halloween\\Sprites\\Glitch FX\\Eye6.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9697256,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 466502201612514,
+				"name": "Look",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 30
+			}
+		],
+		"subfolders": []
+	}
+}
